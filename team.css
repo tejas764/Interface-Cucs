@@ -1,0 +1,181 @@
+body {
+  background-color: #0b0b0c;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.coordinator-card {
+  background: linear-gradient(135deg, #1e1e2f, #151522);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Holographic shine overlay */
+.coordinator-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 0deg,
+    #560145,
+    #03033e,
+    #3939d6,
+    #584601,
+    #ff00cc
+  );
+  animation: holographic-glow 6s linear infinite;
+  mix-blend-mode: overlay;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Optional shine reflection */
+.coordinator-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.05) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: shine 3s ease-in-out infinite;
+}
+
+.coordinator-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.15), 0 0 60px rgba(255, 0, 255, 0.1);
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  50% {
+    left: 125%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+@keyframes holographic-glow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border: 3px solid #c56cf0;
+  padding: 2px;
+}
+
+.name {
+  color: #d27aff;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.role {
+  color: #38bdf8;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.class {
+  color: #9ca3af;
+  font-size: 0.85rem;
+}
+/* manasa mam */
+.coordinator-cards {
+  background: linear-gradient(135deg, #1e1e2f, #151522);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Holographic shine overlay */
+.coordinator-cards::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 0deg,
+    #37022d,
+    #3333ff,
+    #041818,
+    #574603,
+    #ff5100
+  );
+  animation: holographic-glow 8s linear infinite;
+  mix-blend-mode: overlay;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+/* Optional shine reflection */
+.coordinator-cards::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(252, 250, 250, 0.885) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: shine 3s ease-in-out infinite;
+}
+
+.coordinator-cards:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.15), 0 0 60px rgba(255, 0, 255, 0.1);
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  50% {
+    left: 125%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+@keyframes holographic-glow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

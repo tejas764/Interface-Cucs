@@ -1,0 +1,40 @@
+
+.hvr-shine {
+  position: relative;
+  display: inline-block;
+  background:transparent;
+  color: white;
+  
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hvr-shine::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+}
+
+.hvr-shine:hover::before {
+  animation: shine 0.75s ease-in-out;
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
