@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="README.md"><strong>OVERVIEW</strong></a> &nbsp; · &nbsp;
+  <a href="DEMO.md"><strong>DEMO & SCREENSHOTS</strong></a> &nbsp; · &nbsp;
+  <a href="DEMO.md#demo-setup"><strong>SETUP & DEPLOYMENT</strong></a>
+</p>
+
 # Interface — Festival Landing Page
 
 A static event website for INTERFACE 2025–2026, with a neon visual theme, event sections, and team profiles.
